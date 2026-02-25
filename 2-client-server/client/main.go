@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	ctx, cancel := context.WithTimeout(context.Background(), time.Second*5)
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second*3)
 	defer cancel()
 
 	req, err := http.NewRequestWithContext(ctx, "GET", "http://localhost:8080", nil)
